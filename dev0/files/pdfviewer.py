@@ -14,7 +14,7 @@ class PDFViewer(QtWidgets.QLabel):
         
         self.setScaledContents(True)
         
-        self.current_path = "/home/pi/Desktop/dev0/Media/books/history/Bauhaus/"
+        self.current_path = "../Media/books/history/Bauhaus/"
         self.current_page = 0
         self.set_book(path=self.current_path)
         self.data=[]
@@ -41,7 +41,7 @@ class PDFViewer(QtWidgets.QLabel):
         self.data = []
         
         # Read csv file
-        with open('/home/pi/Desktop/dev0/data/books/book_data.csv', mode='r') as csv_file:
+        with open('../data/books/book_data.csv', mode='r') as csv_file:
             csv_reader = csv.DictReader(csv_file)
             for row in csv_reader:
                 current_book = row["book"]
@@ -58,7 +58,7 @@ class PDFViewer(QtWidgets.QLabel):
                 
     def write_page_data(self):
         # Write the data list to the data file
-        with open('/home/pi/Desktop/dev0/data/books/book_data.csv', mode='w') as csv_file:
+        with open('../data/books/book_data.csv', mode='w') as csv_file:
             fieldnames = ['book', 'page']
             writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
             writer.writeheader()
