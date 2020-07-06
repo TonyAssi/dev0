@@ -11,11 +11,15 @@ dev0 can be installed onto the Raspberry Pi as a stand-alone computer or onto yo
 * Raspian Buster 2.13.2020 
 2) Start the Raspberry Pi and make sure the operating system is working. Complete the prompted Raspberry Pi setup for location, WiFi, language, reboot, etc. 
 3) Unzip and copy `dev0-master` folder onto the Desktop of the Raspberry Pi with a USB drive or download the .zip from the GitHub. 
-4) Open the Terminal and execute the `install_dev0` script
+4) Navigate to directory
 ```bash
-sudo Desktop/dev0-master/dev0/install_dev0
+cd Desktop/dev0-master/dev0/
 ```
-5) Restart the Raspberry Pi. 
+5) Open the Terminal and execute the `install_dev0` script
+```bash
+sudo ./install_dev0
+```
+6) Restart the Raspberry Pi. 
 
 ## Contributing
 We are always looking for developers and artists to help support this project. Please reach out if you'd like to collaborate. 
