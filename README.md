@@ -2,6 +2,8 @@
 dev0 is an alternative computer built with Python and Raspberry Pi. It runs custom-built apps like an anonymous web browsing, a paint application, and an AI companion.
 ![](dev0_gif.gif)
 
+[Youtube demo](https://www.youtube.com/watch?v=-1JGkncp4RI)
+
 ## Installation
 dev0 can be installed onto the Raspberry Pi as a stand-alone computer or onto your Mac/Windows machine as a emulator. 
 
